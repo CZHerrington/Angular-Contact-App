@@ -1,0 +1,38 @@
+<h3>ADD NEW CONTACT</h3>
+<pre>ADD FA ICONS TO FORMS | ALSO DONR FORGET TO CHANGE "COMMENT" TO "LOCATION"</pre>
+<hr>
+      <form name="ContactForm" class="contact-form" ng-submit="vm.addContact(form)">
+              <p class="control">
+                <input type="text" placeholder="Johnny Appleseed" class="input" ng-model="form.name" name="ContactName" required>
+                <span class="alert" ng-show="ContactForm.$submitted || ContactForm.ContactName.$touched">
+                    <span ng-show="ContactForm.ContactName.$error.required">This is a required field.</span>
+                </span>
+              </p>
+
+              <p class="control">
+                <input type="email" placeholder="email@example.com" class="input" ng-model="form.email" name="ContactEmail" required>
+                <span class="alert" ng-show="ContactForm.$submitted || ContactForm.ContactEmail.$touched">
+                    <span ng-show="ContactForm.ContactEmail.$error.required">This is a required field.</span>
+                    <span ng-show="ContactForm.ContactEmail.$error.email">This is not a valid email.</span>
+              </span>
+              </p>
+
+              <p class="control">
+                <input type="text" placeholder="(555) 555-5555" class="input" ng-model="form.number" name="ContactNumber" required>
+                <span class="alert" ng-show="ContactForm.$submitted || ContactForm.ContactNumber.$touched">
+                    <span ng-show="ContactForm.ContactNumber.$error.required">This is a required field.</span>
+              </span>
+              </p>
+
+              <p class="control">
+                <input type="comment" placeholder="Atlanta, GA" class="input" ng-model="form.comment" name="ContactLocation" required></input>
+                <span class="alert" ng-show="ContactForm.$submitted || ContactForm.ContactLocation.$touched">
+                    <span ng-show="ContactForm.ContactLocation.$error.required">This is a required field.</span>
+              </span>
+              </p>
+
+              <p class="control">
+                <button class="button">Submit</button>
+              </p>
+
+            </form>

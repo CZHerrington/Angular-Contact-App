@@ -1,0 +1,69 @@
+@import "bulma";
+
+// =================================
+// BEGIN HEADER FOOTER AND CONTAINERS
+.container {
+  width: 600px;
+  margin: 25px auto;
+}
+
+.wrapper {
+  margin: 50px 0;
+}
+
+.footer {
+  text-align: center;
+}
+
+.pad-left {
+    padding-left: 20px;
+  }
+
+  .pad-right {
+      padding-right: 15px;
+    }
+
+// END HEADER FOOTER AND CONTAINERS
+// ================================
+// BEGIN FORM VALIDATION FORMATTING
+.contact-form input.ng-invalid.ng-touched {
+  border-color: #FA787E;
+}
+
+.contact-form input.ng-valid.ng-touched {
+  border-color: #78FA89;
+}
+
+
+.alert {
+  display: inline;
+  color: red;
+  font-size: 16px;
+  font-weight: 200;
+  text-shadow: 0px 0px 5px #ff4d4d;
+}
+
+.button {
+  background-color: #88C470;
+
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  height: 60px;
+  width: 120px;
+}
+
+// END FORM VALIDATION FORMATTING
+// ==============================
+//     BEGIN HOME CONTACT STYLING
+
+.contact-img {
+  border-radius: 50%;
+  border: solid $grey 1px;
+}
+
+article{
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
+}
