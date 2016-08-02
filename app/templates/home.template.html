@@ -15,11 +15,11 @@
   </a>
 </div> -->
 
-
-  <article class="media" ng-repeat="contact in vm.contacts">
+    <a href="/#/contact/{{ contact._id }}" ng-repeat="contact in vm.contacts">
+  <article class="media">
     <figure class="media-left">
       <p class="image">
-        <img class="contact-img" src="https://randomuser.me/api/portraits/thumb/men/80.jpg">
+        <img class="contact-img" ng-src="https://randomuser.me/api/portraits/thumb/men/{{ vm.randNum }}.jpg">
       </p>
     </figure>
     <div class="media-content">
@@ -33,3 +33,4 @@
     <div class="media-right">
     </div>
   </article>
+</a>
